@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; /* внешние отступы */
+    padding: 0; /* внутренние отступы*/
+}
+
+body{
+    font-family: 'Poppins', sans-serif; /* определенный шрифт */
+    font-weight: 400; /* жирность шрифта */
+    color: #ffffff;
+    background: black;
+}
+
+/**/
+a { /* для всех ссылок */
+    text-decoration: none; /* убрать _ */
+}
+img{
+    max-width: 100%; /*максимальная ширина, чтобы не вылазело за пределы род. блока*/
+
+}
+
+.wrapper{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 000000%, rgba(26,14,1,1) 100%); /* цвет фона сайта */
+    width: 100%;
+}
+.container{ /* хэдер и хиро */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px; /* внутренние отступы в шапке снизу и сверху */
+}
+
+header .logo{
+    text-transform: uppercase;
+    font-size: 29px; /* размер текста */
+    font-weight: 800; /* жирность шрифта */ /**/
+}
+header nav{
+    float: right; /* позиционирование навигации по правую сторону */
+    width: 50%; /* половина ширины шапки */
+}
+header nav ul{
+    list-style: none; /* удаляем точки в списке */
+    display: flex; /* элементы списка встались горизонтально */
+    justify-content: space-between; /* растягивание элементов на всю ширину */
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{ /* ссылки навбара*/
+    color: #ffffff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{ /* не будут увеличиватсья - активный пункт меню и btn */
+    border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a{  /* кнопка */
+    background: #FA9021;
+    padding: 9px 17px; /* 9- высота, 17- по бокам */
+    border-radius: 5px; /* скругление углов */
+    transition: all 500ms ease; /* плавность эффекта увеличения кнопки */
+}
+
+header nav ul li.btn a:hover{
+    background: red;
+}
+.hero--info{
+    width: 530px;
+    margin-top: 70px; /* отступ hero от бара */
+}
+button.btn{
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 50px;
+    transition: all 500ms ease;
+    color: #ffffff;
+    border: none;
+    margin-top: 30px; /* отступ кнопки сверху */
+    font-size: 17px; /* размер текста */
+}
+
+button.btn:hover{ /* при наведении на кнопку */
+    background: #DC7000; /* текст кнопки */
+    transform: scale(1.1); /* увеличение кнопки */
+    cursor: pointer; /* курсор наводится */
+}
+
+.hero--info h2{
+    color: #FA9021; /* текст шрифта */
+}
+
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    position: absolute;
+    top: -100px;
+    right: -121px;
+    width: 35%;
+    margin-right: 95px;
+    /*z-index: 2;*/
+}
+
+.trending h3{
+    font-weight: 600; /* жирность */
+    font-size: 31px; /* размер текста */
+    margin-top: 30px;
+}
+
+.trending .see-all{
+    margin-top: 0px;
+    color: #ffffff; /* цвет шрифта */
+    background: #25211D; /* фон текста */
+    border-radius: 5px;
+    padding: 12px 23px; /* внутренний отступ 12 сверху и снизу, 23 по бокам пикселей */
+    float: right; /* позиционирование кнопки по правую сторону */
+    display: block;
+    transition: all 500ms ease; /* плавность эффекта увеличения кнопки */
+    /*z-index: 1;*/
+
+}
+
+.trending .see-all:hover{
+    transform: scale(1.1); /* увеличение кнопки */
+}
+
+.trending .games{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.trending .games .l1{
+    margin-right: 20px;
+}
+
+.trending .games .l2{
+    width: 60%;
+    margin-right: 20px;
+}
+
+.trending .games .l3{
+    width: 51%;
+    margin-right: 20px;
+}
+
+.trending .games .l4{
+    width: 45%;
+    margin-right: 20px;
+}
+
+.trending .games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px ;
+}
+
+.trending .games span img{
+    width: 10%;
+    top: 5px;
+    position: relative;
+    margin-right: 5px;
+
+}
+
+.big-text{
+    text-align: center;
+    font-weight: 600; /* жирность */
+    font-size: 35px; /* размер текста */
+/*margin-top: 30px;*/
+    color: #ffffff;
+    padding: 50px 0px;
+    width: 800px;
+}
+
+.banner{
+    padding: 50px 0px;
+}
+
+.banner h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p{
+   line-height: 170%;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: 30px;
+}
