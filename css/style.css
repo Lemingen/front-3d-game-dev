@@ -116,7 +116,7 @@ button.btn:hover{ /* при наведении на кнопку */
     margin-top: 30px;
 }
 
-.trending .see-all{
+.trending .see-all, .project .see-all{
     margin-top: 0px;
     color: #ffffff; /* цвет шрифта */
     background: #25211D; /* фон текста */
@@ -126,10 +126,9 @@ button.btn:hover{ /* при наведении на кнопку */
     display: block;
     transition: all 500ms ease; /* плавность эффекта увеличения кнопки */
     /*z-index: 1;*/
-
 }
 
-.trending .see-all:hover{
+.trending .see-all:hover, .project .see-all:hover{
     transform: scale(1.1); /* увеличение кнопки */
 }
 
@@ -202,4 +201,81 @@ button.btn:hover{ /* при наведении на кнопку */
 .banner img{
     width: 100%;
     margin-bottom: 30px;
+}
+
+.features{
+    background: url("../img/nature.png") no-repeat center center fixed;
+    background-size: cover; /* растягивание изображения на всю ширину секции  */
+    padding: 80px;
+}
+
+.info .block .pic{
+    background: white;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.info .block .arrow{
+    width: 10%;
+}
+
+.features .container {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.features .container p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.features .container h3 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.features .info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block{
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.project{
+    padding: 100px 0px;
+}
+
+.images{
+    width: 30%;
+}
+
+.project h3{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.project p{
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.project .images{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 50px;
+}
+
+.project .see-all{
+    float: none;
+    width: 60px;
+    margin: 0px auto; /* 0 вверх, вниз, автоматически справа и слева  */
 }
