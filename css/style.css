@@ -441,3 +441,80 @@ footer > p{
 .about{
     padding-bottom: 60px;
 }
+
+.hero-contact h1{
+    text-align: center;
+    font-size: 33px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.hero-contact p{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.hero-contact img{
+width: 100%;
+}
+
+.feedback {
+    padding: 70px 0px;
+    background-color: #1c140F;
+}
+
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div{
+    width: 50%;
+}
+
+.feedback form label{
+    font-size: 14px;
+    color: #4f4f4f;
+    margin-top: 100px;
+}
+
+.feedback form button{
+    float: right;
+}
+
+.feedback form input, .feedback form textarea{
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line{
+    width: 96%;
+}
+
+.feedback form textarea{
+    height: 200px;
+}
