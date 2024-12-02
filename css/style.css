@@ -372,3 +372,72 @@ footer > p{
     text-align: center;
 }
 
+.presentation .info{
+    width: 50%;
+}
+
+.presentation > img{
+    width: 45%;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+}
+
+.presentation .info p{
+    padding: 25px 0px;
+    width: 75%;
+}
+
+.presentation .info h1{
+    width: 75%;
+    font-size: 30px;
+}
+
+.presentation .info .btn{
+    margin-top: 0px;
+}
+
+.work .block p{
+    width: 110%;
+}
+
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block{
+    background-color: #1C140F;
+    padding: 50px 30px;
+    border-radius: 15px;
+    margin: 10px 15px;
+}
+
+.work .blocks .block h3{
+    padding: 25px 0px;
+}
+
+.work .blocks .block span{
+    background-color: #59064c;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.work h2{
+    margin-bottom: 30px;
+}
+
+.work .blocks .block .brown{
+    background-color: #3b2207;
+}
+
+.work .blocks .block .green{
+    background-color: #073b09;
+}
+.about{
+    padding-bottom: 60px;
+}
